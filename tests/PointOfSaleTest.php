@@ -30,6 +30,8 @@ class PointOfSaleTest extends PHPUnit_Framework_TestCase {
         $screen = Phake::mock('Screen');
         $catalog = Phake::mock('Catalog');
         
+        Phake::When($catalog)->search($barcode)->thenReturn('1€');
+        
         $pointOfSale = new PointOfSale($catalog , $screen);
         $pointOfSale->onBarcode('123');
         

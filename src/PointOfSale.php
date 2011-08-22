@@ -15,6 +15,6 @@ class PointOfSale {
     }
     
     public function onBarcode($barcode) {
-        $this->catalog->search($barcode);
+        $this->screen->show($this->catalog->search($barcode));
     }
 }

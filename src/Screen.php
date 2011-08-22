@@ -6,5 +6,6 @@
  */
 interface Screen {
     
+    public function show($price);
 }
 
