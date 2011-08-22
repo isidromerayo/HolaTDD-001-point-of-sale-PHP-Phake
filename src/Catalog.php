@@ -6,4 +6,5 @@
  */
 interface Catalog {
     
+    public function search($barcode);
 }
