@@ -12,6 +12,8 @@ set_include_path(
     . PATH_SEPARATOR . get_include_path()
 );
 
+require_once 'Phake.php';
+
 // Set the default timezone !!!
 date_default_timezone_set('Europe/Madrid');
 
